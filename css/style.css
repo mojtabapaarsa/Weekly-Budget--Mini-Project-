@@ -1,0 +1,184 @@
+a, a:hover, a:focus{
+    text-decoration: none;
+    cursor: pointer;
+}
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: inset 0 -1px 0 rgba(233, 233, 233, 0.185);
+}
+ul,li{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+label{
+    margin: 10px 0 10px 0;
+    font-weight: bold;
+}
+input , input::placeholder{
+    outline: 0 !important;
+}
+body{
+    font-family: iransans;
+
+    background: #ad5389;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #3c1053, #ad5389);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #3c1053, #ad5389); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.bg-primary{
+    background-color: #a14c83 !important;
+}
+.title{
+    text-align: center;
+    margin: 30px 0;
+    color: #fff;
+}
+.main-form{
+    background-color: #fff;
+    margin: 40px 0;
+    min-height: 500px;
+    
+    padding: 20px;
+    
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.add-budget-btn{
+    background-color: #a14c83 !important;
+    font-size: 16px;
+    transition: all .2s linear !important;
+    -webkit-transition: all .2s linear !important;
+    -moz-transition: all .2s linear !important;
+    -ms-transition: all .2s linear !important;
+    -o-transition: all .2s linear !important;
+}
+.add-budget-btn:hover{
+    background-color: #511c5e !important;
+    color: #fec107 !important;
+}
+.left-budget-btn{
+    font-size: 16px;
+    background-color: #1EBC61 !important;
+}
+
+.left-budget-btn-warning{
+    font-size: 16px;
+    background-color: #e6bc35 !important;
+}
+
+.left-budget-btn-danger{
+    font-size: 16px;
+    background-color: #E74C3C !important;
+}
+
+.add-budget-icon{
+    vertical-align: -4px;
+}
+
+.form-title{
+    text-align: center;
+    color: #511c5e;
+    font-weight: bold;
+    
+    
+    
+}
+.inputs-icon{
+    color: #a14c83;
+}
+.add-expense input[type=text]{
+    outline: 0 !important;
+    border: none;
+    border: 2px solid #A0A0A0;
+}
+.add-expense input:focus  {
+    border: 2px solid #a14c83;
+    
+}
+.add-to-list-btn{
+     width: 100%;
+     margin-top: 20px;
+     background-color: #a14c83;
+     border: none;
+     transition:background-color .3s linear ;
+     -webkit-transition:background-color .3s linear ;
+     -moz-transition:background-color .3s linear ;
+     -ms-transition:background-color .3s linear ;
+     -o-transition:background-color .3s linear ;
+}
+.add-to-list-btn:hover , .add-to-list-btn:active{
+    background-color: #511c5e;
+}
+
+.add-to-list-icon{
+    opacity: 0;
+    transition: i .2s linear;
+    -webkit-transition: i .2s linear;
+    -moz-transition: i .2s linear;
+    -ms-transition: i .2s linear;
+    -o-transition: i .2s linear;
+}
+.add-to-list-btn:hover .add-to-list-icon{
+    opacity: 100%;
+}
+.expense-added{
+    display: flex;
+    width: 100%;
+    background-color: #e2e2e2;
+    padding: 5px 8px;
+    margin: 7px 0;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-right: 4px solid #511c5e;
+    justify-content: space-between ;
+    transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+}
+.expense-added:hover{
+    background-color: #cfcfcf;
+     
+}
+/* Modal */
+#add-budget-modal{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#add-budget-modal input{
+    border: none;
+    border-bottom: 3px solid #a14c83;
+}
+.modal-btn-custom{
+    background-color:#a14c83 !important ;
+    border: none;
+    transition: background-color .2s linear;
+    -webkit-transition: background-color .2s linear;
+    -moz-transition: background-color .2s linear;
+    -ms-transition: background-color .2s linear;
+    -o-transition: background-color .2s linear;
+}
+.modal-btn-custom:hover {
+    background-color:#7e2071 !important ;
+    box-shadow: inset 0 -1px 0 rgba(233, 233, 233, 0.185);
+}

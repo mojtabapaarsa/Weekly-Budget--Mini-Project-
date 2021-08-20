@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>بودجه هفتگی</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h3 class="title">پروژه بودجه بندی هفتگی</h3>
+                <div class="main-form">
+                  <div class="insert-budget-btns d-flex justify-content-between">
+                      
+                      <!-- Button trigger modal -->
+                    <a href="#" class="badge rounded-pill   add-budget-btn" data-bs-toggle="modal" data-bs-target="#budget-modal"> <i class="fas fa-dollar-sign add-budget-icon"></i> تعیین بودجه ی هفته</a>
+                    <!-------- End -->
+                   
+                     
+
+
+
+                    <a href="#" class="badge rounded-pill bg-success text-white left-budget-btn"> <i class="far fa-credit-card add-budget-icon"></i> بودجه باقی مانده : <span id="left">0</span> تومان </a>
+                  </div>
+
+                   <div class="row mt-4">
+                       <div class="col-sm-12">
+                           <div class="row">
+                               <h5 class="form-title mb-4">«هزینه ها رو اینجا وارد کن»</h5>
+                                <form action="#" class="add-expense" id="add-expense">
+                                    <div class="col-12">
+                                        <div class="row">
+                                            <div class="col-12 error-section">
+                                                <!-- محل قرارگرفتن اخطار -->
+                                                <!-- <div class="alert alert-danger" role="alert">
+                                                    لطفا مقادیر را به درستی وارد کنید
+                                                  </div> -->
+                                            </div>
+                                            <div class="col-sm-12 col-md-8">
+                                                <label for="expense"><i class="fas fa-clipboard-check inputs-icon"></i>  اسم : </label>
+                                                <input type="text" class="form-control" id="expense" placeholder="مثلا تاکسی و کافه و ...">
+                                            </div>
+                                            <div class="col-sm-12 col-md-4">
+                                                <label for="expense"><i class="fas fa-hand-holding-usd inputs-icon"></i>  هزینه انجام شده : </label>
+                                                <input type="text" class="form-control" id="amount" placeholder="هزینه را به تومان وارد کنید (مثلا 5000)">
+                                            </div>
+                                            
+                                        </div>
+                                        <button class="btn btn-primary btn-block add-to-list-btn" type="submit"><i class="fas fa-angle-left add-to-list-icon"></i> افزودن به لیست هزینه ها </button>
+                                    </div>
+                                    
+                                    
+                                    
+                                </form>
+                               
+                                <h5 class="form-title mb-4 mt-5">«لیست هزینه های انجام شده»</h5>
+                                <div id="expenses">
+                                    <ul class="list-group d-flex ">
+                                        <!-- نمونه خرج -->
+                                        <!-- <li class="expense-added"> تاکسی  <span class="badge rounded-pill bg-primary"> 2000 تومان </span></li> -->
+                                        
+                                    </ul>
+                                </div>
+                           </div>
+                       </div>
+
+                       <!-- <div class="col-sm-12 col-md-6">
+                        <div class="row">
+                            <h5 class="form-title">مقدار بودجه ی هفته </h5>
+                        </div>
+                    </div> -->
+
+
+                   </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<!-- Start Modal -->
+<!-- <div class="modal fade" id="budget-modal" tabindex="-1" aria-labelledby="budget-modal-label" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header d-flex justify-content-between">
+                <h5 class="modal-title ">افزودن بودجه هفتگی</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="#" id="add-budget-modal">
+                    <div class="form-group">
+                        <label for="bud"> مقدار بودجه هفته : </label>
+                    <input id="budget-input" type="text" placeholder="مثلا 300000">
+                    <br>
+                    <button id="budget-modal-btn" class="btn btn-primary modal-btn-custom" type="submit"> ثبت بودجه </button>
+                    </div>
+                </form>
+            </div>
+             
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- End Modal -->
+
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/all.min.js"></script>
+    <script src="JS/app.js"></script>
+</body>
+</html>
